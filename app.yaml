@@ -1,0 +1,27 @@
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico # icon on tab
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+# any route found in the url /url will be found in the directory styles
+- url: /media
+  static_dir: media
+
+- url: /styles
+  static_dir: styles
+
+- url: /images
+  static_dir: images
+
+- url: .* # .* means "everything else"
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+- name: jinja2
+  version: latest

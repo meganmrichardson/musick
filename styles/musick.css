@@ -1,0 +1,48 @@
+body{
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 50px auto;
+  grid-template-columns: 150px auto;
+  margin: 0;
+}
+
+header{
+  font-size: 40px;
+  font-family: avenir;
+  text-shadow: 0 0 15px white;
+  text-align: center;
+  background-color: black;
+  color: white;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+#menu{
+  background-color: black;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  grid-column: 1;
+  grid-row: 2;
+  color: white;
+  font-family: avenir;
+}
+
+#main, #artistsselection, #profile {
+  background-color: rgb(30, 30, 30);
+  grid-column: 2;
+  grid-row: 2;
+  border-top: 1px solid white;
+  padding: 10px;
+  color: white;
+  font-family: avenir;
+  font-size: 20px;
+}
+
+#links a{
+  color: white;
+  text-decoration: none;
+}
+
+#linksong:hover a, #linkartists:hover a, #linkalbums:hover a, #linksong:hover, #linkartists:hover, #linkalbums:hover{
+  color: gold;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Artist Profile</title>
+    <link rel="stylesheet" href="/styles/musick.css">
+  </head>
+  <body>
+    <header>welcome to musick</header>
+    <section id="menu"><p>menu</p></section>
+    <section id="profile">
+      <h1>{{ name }}'s artist profile</h1>
+      <p><img src="/media/{{ image }}" width="300"></p>
+      <iframe src="https://open.spotify.com/embed/artist/{{ spotify_link }}" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </section>
+  </body>
+</html>
